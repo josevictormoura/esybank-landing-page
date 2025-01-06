@@ -1,0 +1,270 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root{
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.header{
+  position: relative;
+  background: var(--White);
+  width: 100%;
+  z-index: 10;
+  padding: 20px;
+  
+}
+
+.header-content{
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.list-links{
+  display: flex;
+  gap: 5px;
+}
+
+.list-links a{
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+  padding: 10px;
+  transition: all;
+}
+
+.list-links a:hover{
+  border-bottom: 4px solid var(--Lime-Green);
+}
+
+.button{
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  color: var(--White);
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#menu-mobile{
+  display: none;
+}
+
+.main{
+  background-color: var(--Very-Light-Gray);
+  height: 550px;
+}
+
+.main{
+  background-image: url('./images/bg-intro-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: top -260px left 680px;
+}
+
+.main .main-container{
+  display: flex;
+  max-width: 1200px;
+  margin: 0px auto;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.main-descrition{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-descrition h1{
+  font-size: 3rem;
+  font-weight: 300;
+  max-width: 500px;
+}
+
+.main-descrition p{
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+  max-width: 420px;
+}
+
+.img-smartphones{
+  position: relative;
+  transform: translate3d(270px, -120px, 0);
+  width: 700px;
+  height: 900px;
+}
+
+.benefits{
+  background-color: var(--Light-Grayish-Blue);
+  padding: 80px 0;
+}
+
+.benefits-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0px auto;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.benefits-introduction{
+  margin-bottom: 70px;
+}
+
+.benefits-introduction h2{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.benefits-introduction p{
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+  max-width: 600px;
+}
+
+.benefits-container-cards{
+  display: flex;
+  gap: 40px;
+}
+
+.benefits-container-cards img{
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.benefits-container-cards h4{
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.benefits-container-cards p{
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+  max-width: 600px;
+}
+
+.lasters-articles{
+  padding: 80px 0;
+}
+
+.lasters-articles-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0px auto;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.lasters-articles-container h2{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.lasters-articles-container-cards{
+  display: flex;
+  gap: 30px;
+}
+
+.lasters-articles-container-cards .card{
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.lasters-articles-container-cards .name{
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+  margin-bottom: 8px;
+}
+
+.lasters-articles-container-cards .descrition{
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+  margin-top: 8px;
+  line-height: 1.2;
+}
+
+.footer{
+  background-color: #2D314D;
+  padding: 40px 0;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0px auto;
+  height: 100%;
+  padding: 0 20px;
+  gap: 100px;
+}
+
+.footer-container div:first-child{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-container .social-media{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-container .list-links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.footer-container .list-links li{
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.footer-container div:last-child{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.footer-container div:last-child p{
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--Grayish-Blue);
+}
